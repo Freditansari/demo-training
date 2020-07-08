@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>merdeka training</title>
+    <meta name="twitter:description" content="merdeka cloud training adalah solusi training programming dimana anda dapat belajar programming secara gratis dan langsung di salurkan ke pekerjaan. ">
+    <meta name="twitter:image" content="assets/img/FullColor_TransparentBg_-1@2x.png">
+    <meta property="og:image" content="assets/img/FullColor_TransparentBg_-1@2x.png">
+    <meta name="description" content="solusi training programming ">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Solusi training programming ">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,600">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css">
+</head>
+
+<body>
+    <div id="registration-form-merdekacloud-training">
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean-button">
+        <div class="container"><a class="navbar-brand" href="/index.html"><img class="navbar-logo" src="assets/img/FullColor_TransparentBg_-1@2x.png" height="15px" width="35px"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav mr-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/index.html">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/employers.html">Hire Our Grads</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/isa-intro.html">Beasiswa</a></li>
+                </ul><span class="navbar-text actions"> <a class="btn btn-light action-button" role="button" href="registration-form.html">Sign Up</a></span></div>
+        </div>
+    </nav>
+    <div class="registration-form-div">
+        <div class="container registration-form-container">
+            <div class="card-div-container">
+                <div class="spacer"></div>
+                <div class="card registration-form-card">
+                    <h1 class="registration-form-heading">Formulir Pendaftaran</h1>
+                    <form class="registration-form" @submit.prevent="submit">
+                        <div class="form-row">
+                            <div class="col-3 col-xl-3 col-sm-12 col-md-6 col-lg-6 registration-form-sm">
+                                <h6>Nama Depan:</h6>
+                            </div>
+                            <div class="col col-sm-12 col-md-6 col-lg-6 registration-form-sm"><input class="form-control" type="text" v-model="firstName"></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-3 col-xl-3 col-sm-12 col-md-6 col-lg-6 registration-form-sm">
+                                <h6>Nama Belakang:</h6>
+                            </div>
+                            <div class="col col-md-6 col-lg-6"><input class="form-control" type="text" v-model="lastName"></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-3 col-xl-3 col-md-6 col-lg-6 col-sm-12 registration-form-sm">
+                                <h6>Email:&nbsp;</h6>
+                            </div>
+                            <div class="col col-md-6 col-lg-6 col-sm-12 registration-form-sm"><input class="form-control" v-model="email.value" type="text"></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-3 col-xl-3 col-md-6 col-lg-6 col-sm-12 registration-form-sm">
+                                <h6>Tanggal Lahir:&nbsp;</h6>
+                            </div>
+                            <div class="col col-sm-12 registration-form-sm col-md-6 col-lg-6"><input class="form-control" v-model="birthDate" type="text"></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-3 col-xl-3 col-sm-12 registration-form-sm col-md-6 col-lg-6">
+                                <h6>Jenis Kelamin:&nbsp;</h6>
+                            </div>
+                            <div class="col col-sm-12 registration-form-sm col-md-6 col-lg-6">
+                                <div class="dropdown">
+                                    <!-- <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">Pilih</button>
+                                    <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">Pria</a><a class="dropdown-item" role="presentation" href="#">Perempuan</a></div> -->
+                                    <select class="btn btn-primary dropdown-toggle" v-model="sex" id="jenisKelamin">
+                                        <option value="Pria">Pria</option>
+                                        <option value="Perempuan">Perempuan</option>    
+                                      </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-3 col-xl-3 col-sm-12 registration-form-sm col-md-6 col-lg-6">
+                                <h6>Alamat Lengkap:</h6>
+                            </div>
+                            <div class="col col-sm-12 registration-form-sm col-md-6 col-lg-6"><textarea v-model="address" class="form-control"></textarea></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-3 col-xl-3 col-sm-12 registration-form-sm col-md-6 col-lg-6">
+                                <h6>Kota:</h6>
+                            </div>
+                            <div class="col col-sm-12 registration-form-sm col-md-6 col-lg-6"><input class="form-control" v-model="city" type="text"></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-3 col-xl-3 col-sm-12 registration-form-sm col-md-6 col-lg-6">
+                                <h6>Kode Pos:</h6>
+                            </div>
+                            <div class="col col-sm-12 registration-form-sm col-md-6 col-lg-6"><input class="form-control" v-model="zipCode" type="text"></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-3 col-xl-3 col-sm-12 registration-form-sm col-md-6 col-lg-6">
+                                <h6>Nomor Handphone:</h6>
+                            </div>
+                            <div class="col col-sm-12 registration-form-sm col-md-6 col-lg-6"><input class="form-control" v-model="phoneNumber" type="text"></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-3 col-xl-3 col-sm-12 registration-form-sm col-md-6 col-lg-6">
+                                <h6></h6>
+                            </div>
+                            <div class="col col-sm-12 registration-form-sm col-md-6 col-lg-6"><button class="btn btn-primary" type="submit">Daftar</button></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-clean">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="index.html">Trainings</a></li>
+                            <li><a href="coming-soon.html">Development</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Hiring Solutions</h3>
+                        <ul>
+                            <li><a href="employers.html">Hire Our Graduates</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Careers</h3>
+                        <ul>
+                            <li><a href="coming-soon.html">Job openings</a></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 item social"><a href="https://www.facebook.com/therealfredyyudiawan"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="https://www.instagram.com/merdekacloud/"><i class="icon ion-social-instagram"></i></a>
+                        <a
+                            href="https://www.linkedin.com/company/30899031"><i class="icon ion-social-linkedin"></i></a>
+                            <p class="copyright">Merdekacloud.com © 2020</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <script src="registration-form.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js"></script>
+</body>
+
+</html>
