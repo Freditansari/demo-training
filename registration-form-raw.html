@@ -12,7 +12,6 @@
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Solusi training programming ">
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,600">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
@@ -21,7 +20,6 @@
 </head>
 
 <body>
-    <div id="registration-form-merdekacloud-training">
     <nav class="navbar navbar-light navbar-expand-md navigation-clean-button">
         <div class="container"><a class="navbar-brand" href="/index.html"><img class="navbar-logo" src="assets/img/FullColor_TransparentBg_-1@2x.png" height="15px" width="35px"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div
@@ -33,49 +31,44 @@
                 </ul><span class="navbar-text actions"> <a class="btn btn-light action-button" role="button" href="registration-form.html">Sign Up</a></span></div>
         </div>
     </nav>
-    <div class="registration-form-div">
+    <div id="registration-form-merdekacloud-training" class="registration-form-div">
         <div class="container registration-form-container">
             <div class="card-div-container">
                 <div class="spacer"></div>
                 <div class="card registration-form-card">
                     <h1 class="registration-form-heading">Formulir Pendaftaran</h1>
-                    <form class="registration-form" @submit.prevent="submit">
+                    <form class="registration-form">
                         <div class="form-row">
                             <div class="col-3 col-xl-3 col-sm-12 col-md-6 col-lg-6 registration-form-sm">
                                 <h6>Nama Depan:</h6>
                             </div>
-                            <div class="col col-sm-12 col-md-6 col-lg-6 registration-form-sm"><input class="form-control" type="text" v-model="firstName"></div>
+                            <div class="col col-sm-12 col-md-6 col-lg-6 registration-form-sm"><input class="form-control" type="text"></div>
                         </div>
                         <div class="form-row">
                             <div class="col-3 col-xl-3 col-sm-12 col-md-6 col-lg-6 registration-form-sm">
                                 <h6>Nama Belakang:</h6>
                             </div>
-                            <div class="col col-md-6 col-lg-6"><input class="form-control" type="text" v-model="lastName"></div>
+                            <div class="col col-md-6 col-lg-6"><input class="form-control" type="text"></div>
                         </div>
                         <div class="form-row">
                             <div class="col-3 col-xl-3 col-md-6 col-lg-6 col-sm-12 registration-form-sm">
                                 <h6>Email:&nbsp;</h6>
                             </div>
-                            <div class="col col-md-6 col-lg-6 col-sm-12 registration-form-sm"><input class="form-control" v-model="email.value" type="text"></div>
+                            <div class="col col-md-6 col-lg-6 col-sm-12 registration-form-sm"><input class="form-control" type="text"></div>
                         </div>
                         <div class="form-row">
                             <div class="col-3 col-xl-3 col-md-6 col-lg-6 col-sm-12 registration-form-sm">
                                 <h6>Tanggal Lahir:&nbsp;</h6>
                             </div>
-                            <div class="col col-sm-12 registration-form-sm col-md-6 col-lg-6"><input class="form-control" v-model="birthDate" type="text"></div>
+                            <div class="col col-sm-12 registration-form-sm col-md-6 col-lg-6"><input class="form-control" type="text"></div>
                         </div>
                         <div class="form-row">
                             <div class="col-3 col-xl-3 col-sm-12 registration-form-sm col-md-6 col-lg-6">
                                 <h6>Jenis Kelamin:&nbsp;</h6>
                             </div>
                             <div class="col col-sm-12 registration-form-sm col-md-6 col-lg-6">
-                                <div class="dropdown">
-                                    <!-- <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">Pilih</button>
-                                    <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">Pria</a><a class="dropdown-item" role="presentation" href="#">Perempuan</a></div> -->
-                                    <select class="btn btn-primary dropdown-toggle" v-model="sex" id="jenisKelamin">
-                                        <option value="Pria">Pria</option>
-                                        <option value="Perempuan">Perempuan</option>    
-                                      </select>
+                                <div class="dropdown"><button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">Pilih</button>
+                                    <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">Pria</a><a class="dropdown-item" role="presentation" href="#">Perempuan</a></div>
                                 </div>
                             </div>
                         </div>
@@ -83,31 +76,31 @@
                             <div class="col-3 col-xl-3 col-sm-12 registration-form-sm col-md-6 col-lg-6">
                                 <h6>Alamat Lengkap:</h6>
                             </div>
-                            <div class="col col-sm-12 registration-form-sm col-md-6 col-lg-6"><textarea v-model="address" class="form-control"></textarea></div>
+                            <div class="col col-sm-12 registration-form-sm col-md-6 col-lg-6"><textarea class="form-control"></textarea></div>
                         </div>
                         <div class="form-row">
                             <div class="col-3 col-xl-3 col-sm-12 registration-form-sm col-md-6 col-lg-6">
                                 <h6>Kota:</h6>
                             </div>
-                            <div class="col col-sm-12 registration-form-sm col-md-6 col-lg-6"><input class="form-control" v-model="city" type="text"></div>
+                            <div class="col col-sm-12 registration-form-sm col-md-6 col-lg-6"><input class="form-control" type="text"></div>
                         </div>
                         <div class="form-row">
                             <div class="col-3 col-xl-3 col-sm-12 registration-form-sm col-md-6 col-lg-6">
                                 <h6>Kode Pos:</h6>
                             </div>
-                            <div class="col col-sm-12 registration-form-sm col-md-6 col-lg-6"><input class="form-control" v-model="zipCode" type="text"></div>
+                            <div class="col col-sm-12 registration-form-sm col-md-6 col-lg-6"><input class="form-control" type="text"></div>
                         </div>
                         <div class="form-row">
                             <div class="col-3 col-xl-3 col-sm-12 registration-form-sm col-md-6 col-lg-6">
                                 <h6>Nomor Handphone:</h6>
                             </div>
-                            <div class="col col-sm-12 registration-form-sm col-md-6 col-lg-6"><input class="form-control" v-model="phoneNumber" type="text"></div>
+                            <div class="col col-sm-12 registration-form-sm col-md-6 col-lg-6"><input class="form-control" type="text"></div>
                         </div>
                         <div class="form-row">
                             <div class="col-3 col-xl-3 col-sm-12 registration-form-sm col-md-6 col-lg-6">
                                 <h6></h6>
                             </div>
-                            <div class="col col-sm-12 registration-form-sm col-md-6 col-lg-6"><button class="btn btn-primary" type="submit">Daftar</button></div>
+                            <div class="col col-sm-12 registration-form-sm col-md-6 col-lg-6"><button class="btn btn-primary" type="button">Daftar</button></div>
                         </div>
                     </form>
                 </div>
@@ -148,9 +141,6 @@
             </div>
         </footer>
     </div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
-    <script src="registration-form.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js"></script>
