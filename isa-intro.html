@@ -15,8 +15,11 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,600">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Footer-Clean.css">
     <link rel="stylesheet" href="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
@@ -28,7 +31,7 @@
                     <li class="nav-item" role="presentation"><a class="nav-link" href="./index.html">Home</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="./employers.html">Hire Our Grads</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="./isa-intro.html">Beasiswa</a></li>
-                </ul><span class="navbar-text actions"> <a class="btn btn-light action-button" role="button" href="./registration-form.html">Sign Up</a></span></div>
+                </ul><span class="navbar-text actions"> <a class="btn btn-light action-button" role="button" href="registration-form.html">Sign Up</a></span></div>
         </div>
     </nav>
     <div class="hero">
@@ -37,7 +40,7 @@
                 <div class="col col-sm-12 col-md-12 col-lg-6 isa-intro-columns isa-intro-column-left-content">
                     <h1 class="isa-heading-intro-title">Belajar Dulu, Bayar Setelah Kerja</h1>
                     <h5 class="isa-heading-intro-subtext">Solusi mulai karir tanpa khawatir dengan biaya</h5><button class="btn btn-primary isa-intro-button" type="button">Scroll ke Bawah Untuk Detail&nbsp;<i class="icon ion-android-arrow-dropdown"></i></button></div>
-                <div class="col col-sm-12 col-md-12 col-lg-6 isa-intro-columns isa-intro-right-img"></div>
+                <div class="col col-sm-12 col-md-6 col-lg-6 isa-intro-columns"><img class="isa-right-img" src="assets/img/isa-intro-vector.png"></div>
             </div>
         </div>
     </div>
@@ -68,7 +71,7 @@
                 <div class="col col-sm-6 col-lg-3 col-benefit">
                     <div class="card isa-benefit-card">
                         <h3 class="isa-card-benefit-title-heading isa-card-benefit-text">Tidak ada Denda</h3>
-                        <h5 class="isa-card-benefit-detail isa-card-benefit-text">Jika anda terpaksa berhenti berkerja maka tidak ada pembayaran yang harus anda lakukan.Kami akan tetap membantu anda mencari perkerjaan lain.&nbsp;</h5>
+                        <h5 class="isa-card-benefit-detail isa-card-benefit-text">Jika anda terpaksa berhenti berkerja maka tidak ada pembayaran yang harus anda lakukan.&nbsp;</h5>
                     </div>
                 </div>
                 <div class="col col-sm-6 col-lg-3 col-benefit">
@@ -80,42 +83,43 @@
             </div>
         </div>
     </div>
-
     <div class="courses">
         <div class="scrolling-wrapper">
           <h3 class ="heading-text-sample">Swipe/Scroll Untuk Melihat Sample Course Kami </h3>
           <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="card">
-                <div class="card-body">
-                  <iframe src="https://www.youtube.com/embed/videoseries?list=PLBAqvoedQqy4VrAqTc_6wC9oVMULwzNFJ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="card-body video-container">
+                  <iframe class="youtube-iframe"  src="https://www.youtube.com/embed/videoseries?list=PLBAqvoedQqy4VrAqTc_6wC9oVMULwzNFJ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"  allowfullscreen></iframe>
                 </div>
             </div>
 
-            <div class="card">
-                <div class="card-body">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLBAqvoedQqy6LELRnPb0VXj5g2TfbwOL_" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="card ">
+                <div class="card-body video-container">
+                    <iframe class="youtube-iframe"  src="https://www.youtube.com/embed/videoseries?list=PLBAqvoedQqy6LELRnPb0VXj5g2TfbwOL_" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"  allowfullscreen></iframe>
                 </div>
               </div>
+
+              <!-- width="560" height="315" -->
   
-            <div class="card">
-              <div class="card-body">
-                <iframe src="https://www.youtube.com/embed/videoseries?list=PLBAqvoedQqy6NM-5lYwxi4nzBHOSBdV9j" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="card ">
+              <div class="card-body video-container">
+                <iframe class ="youtube-iframe"  src="https://www.youtube.com/embed/videoseries?list=PLBAqvoedQqy6NM-5lYwxi4nzBHOSBdV9j" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"  allowfullscreen></iframe>
               </div>
             </div>
 
           
   
   
-            <div class="card">
-              <div class="card-body">
-                <iframe src="https://www.youtube.com/embed/videoseries?list=PLBAqvoedQqy4zeR3NNhNpcGrEoQh1uMEG" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="card ">
+              <div class="card-body video-container">
+                <iframe class ="youtube-iframe"  src="https://www.youtube.com/embed/videoseries?list=PLBAqvoedQqy4zeR3NNhNpcGrEoQh1uMEG" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"  allowfullscreen></iframe>
               </div>
             </div>
   
-            <div class="card">
-              <div class="card-body">
-                <iframe src="https://www.youtube.com/embed/videoseries?list=PLBAqvoedQqy7UoZEPyWc78247B7RiJrPR" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="card ">
+              <div class="card-body video-container">
+                <iframe class ="youtube-iframe"  src="https://www.youtube.com/embed/videoseries?list=PLBAqvoedQqy7UoZEPyWc78247B7RiJrPR" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"  allowfullscreen></iframe>
               </div>
             </div>
   
@@ -138,7 +142,6 @@
                     </div>
                     <div class="row call-to-action-button-row">
                         <div class="col"><a class="btn btn-primary call-to-action-button" role="button" href="./registration-form.html">Daftar</a></div>
-                        <!-- <div class="col"><a class="btn btn-primary call-to-action-button" href="./registration-form.html" type="button">Daftar</a></div> -->
                     </div>
                 </div>
             </div>
@@ -152,20 +155,20 @@
                     <div class="col-sm-4 col-md-3 item">
                         <h3>Services</h3>
                         <ul>
-                            <li><a href="./index.html">Trainings</a></li>
-                            <li><a href="./coming-soon.html">Development</a></li>
+                            <li><a href="index.html">Trainings</a></li>
+                            <li><a href="coming-soon.html">Development</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-4 col-md-3 item">
                         <h3>Hiring Solutions</h3>
                         <ul>
-                            <li><a href="./employers.html">Hire Our Graduates</a></li>
+                            <li><a href="employers.html">Hire Our Graduates</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-4 col-md-3 item">
                         <h3>Careers</h3>
                         <ul>
-                            <li><a href="./coming-soon.html">Job openings</a></li>
+                            <li><a href="coming-soon.html">Job openings</a></li>
                             <li></li>
                             <li></li>
                         </ul>
@@ -179,19 +182,6 @@
             </div>
         </footer>
     </div>
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-        (function(){
-        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-        s1.async=true;
-        s1.src='https://embed.tawk.to/5f0692645b59f94722ba61f0/default';
-        s1.charset='UTF-8';
-        s1.setAttribute('crossorigin','*');
-        s0.parentNode.insertBefore(s1,s0);
-        })();
-    </script>
-    <!--End of Tawk.to Script-->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js"></script>
